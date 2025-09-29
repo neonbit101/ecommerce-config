@@ -5,10 +5,10 @@ server:
 spring:
   application:
     name: user-service
-  datasource:
-    url: jdbc:mysql://localhost:3308/userdb
-    username: root
-    password: rootPassword
+  # datasource:
+  #   url: jdbc:mysql://localhost:3308/userdb
+  #   username: root
+  #   password: rootPassword
 
 eureka:
   client:
