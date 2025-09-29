@@ -5,10 +5,17 @@ server:
 spring:
   application:
     name: user-service
-  # datasource:
-  #   url: jdbc:mysql://localhost:3308/userdb
-  #   username: root
-  #   password: rootPassword
+  datasource:
+    url: jdbc:mysql://localhost:3308/userdb
+    username: root
+    password: rootPassword
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update     # (or 'validate', 'none', 'create', etc.)
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
 
 eureka:
   client:
